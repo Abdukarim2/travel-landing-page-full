@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 mb-5 element-animate fadeInUp element-animated">
+        <h3 class="mb-5">{{contex_detail.form.0}}</h3>
+        <form  method="POST">
+            {% csrf_token %}
+            <div class="row">
+            <div class="col-md-12 form-group">
+                <label for="id_name">{{contex_detail.form.1}}</label>
+                {{form.name}}
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12 form-group">
+                <label for="id_number">{{contex_detail.form.2}}</label>
+                {{form.number}}
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12 form-group">
+                <label for="id_age">{{contex_detail.form.3}}</label>
+                {{form.age}}
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12 form-group">
+                <label for="id_message">{{contex_detail.form.4}}</label>
+                {{form.message}}
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-6 form-group">
+                <input type="submit" value="{{contex_detail.form.5}}" class="btn btn-primary">
+            </div>
+            </div>
+        </form>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 element-animate fadeInUp element-animated">
+        <h3 class="mb-5">{{contex_detail.form.6}}</h3>
+        <ul class="list-unstyled ">
+            <li class="d-flex mb-3"><span class="mr-3"><span class="icon ion-ios-location"></span></span><span class="">{{contex_detail.form.7}}</span></li>
+            <li class="d-flex mb-3"><span class="mr-3"><span class="icon ion-ios-telephone"></span></span><span class="">+99 893 123 45 67</span></li>
+            <li class="d-flex mb-3"><span class="mr-3"><span class="icon ion-email"></span></span><span class="">info@travel.uz</span></li>
+        </ul>
+        </div>
+    </div>
+</div>

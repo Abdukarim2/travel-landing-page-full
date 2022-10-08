@@ -1,0 +1,66 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+<section class="site-hero site-hero-innerpage overlay" data-stellar-background-ratio="0.5"
+style="background-image: url({% static 'images/1.jpg' %});">
+<div class="container">
+  <div class="row align-items-center site-hero-inner justify-content-center">
+    <div class="col-md-8 text-center">
+
+      {% include './detail-text.html' %}
+      
+    </div>
+  </div>
+</div>
+</section>
+<!-- END section -->
+
+<section class="site-section">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 mb-5 element-animate" data-animate-effect="fadeInLeft">
+      <img src="{% static 'images/1.jpg' %}" class="img-md-fluid" alt="Placeholder image">
+    </div>
+    <div class="col-lg-6 col-md-12">
+      <div class="bg-white pl-lg-5 pl-0  pb-lg-5 pb-0 element-animate" data-animate-effect="fadeInRight">
+        <h2 class="mb-2">Samarqand va Buxoro</h2>
+        <p>Muborak shaharlar ziyoratini biz bilan birga amalga oshiring. Travel sizga arzon narxlar , qulay
+          xizmatlarni taklif qiladi.</p>
+        <ul class="list-unstyled">
+          <li>
+            <span class="fa fa-map-o"></span> Saudia Arabistoni , Madina va Makka shaharlari
+          </li>
+          <li>
+            <span class="fa fa-calendar"></span> 15 kun
+          </li>
+          <li>
+            <span class="fa fa-hotel"></span> 3 yulduzli mehmonxona
+          </li>
+          <li>
+            <span class="fa fa-bus"></span> Zamonaviy avtobus
+          </li>
+          <li>
+            <span class="fa fa-plane"></span> Borish kelish xizmatlari
+          </li>
+          <li>
+            <span class="fa fa-user"></span> Yo'l boshlovchi xizmati
+          </li>
+        </ul>
+        <p>1 kishi uchun ushbu turning narxi <span class="h3 text-warning"> $1650 </span> ni tashqil qiladi.</p>
+        <p>Xoziroq qo'ng'iroq qiling yoki buyurtma qilish formasi orqali joy band qiling va <span
+            class="h3 text-warning">10%</span> lik chegirmaga ega
+          bo'ling !</p>
+        <br>
+        <p><a href="#" class="btn btn-black">{{contex_detail.order.0}}</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- END section -->
+
+<section class="site-section">
+  {% include './order-form.html' %}
+</section>
+<!-- END section -->
+{% endblock content %}
